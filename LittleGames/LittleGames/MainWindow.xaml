@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="LittleGames" Height="350" Width="525">
     <Grid>
-        <Button x:Name="bnt_sodoku" Content="Start Sodoku" HorizontalAlignment="Left" Height="92" Margin="125,150,0,0" VerticalAlignment="Top" Width="295"/>
+        <Button x:Name="bnt_sodoku" Content="Start Sodoku" HorizontalAlignment="Left" Height="92" Margin="125,150,0,0" VerticalAlignment="Top" Width="295" Click="bnt_sodoku_Click"/>
 
     </Grid>
 </Window>

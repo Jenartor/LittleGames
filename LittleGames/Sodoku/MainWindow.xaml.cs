@@ -13,19 +13,13 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace LittleGames {
+namespace Sodoku {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window {
         public MainWindow() {
             InitializeComponent();
-        }
-
-        private void bnt_sodoku_Click(object sender, RoutedEventArgs e) {
-            var newWindow = new Sodoku(this);
-            newWindow.Show();
-            this.Hide();
         }
     }
 }

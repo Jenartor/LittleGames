@@ -10,22 +10,21 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace LittleGames {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Sodoku.xaml
     /// </summary>
-    public partial class MainWindow : Window {
-        public MainWindow() {
+    public partial class Sodoku : Window {
+        private MainWindow m_parent;
+        public Sodoku(MainWindow parent) {
+            m_parent = parent;
             InitializeComponent();
         }
 
-        private void bnt_sodoku_Click(object sender, RoutedEventArgs e) {
-            var newWindow = new Sodoku(this);
-            newWindow.Show();
-            this.Hide();
+        private void Window_Closed(object sender, EventArgs e) {
+            m_parent.Show();
         }
     }
 }
